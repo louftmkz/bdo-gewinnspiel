@@ -11,7 +11,11 @@
     "@chrissi_tbh / @madalin_kalteis",
     "@zimmer.berlin"
   ],
-  "result": null,
+  "result": {
+    "winnerIndex": 4,
+    "winner": "@chrissi_tbh / @madalin_kalteis",
+    "drawnAt": "2026-09-10T21:14:55.264Z"
+  },
   "createdAt": "2026-09-10T20:00:00.000Z",
-  "updatedAt": "2026-09-10T20:00:00.000Z"
+  "updatedAt": "2026-09-10T21:14:55.264Z"
 }
