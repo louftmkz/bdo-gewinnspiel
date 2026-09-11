@@ -11,7 +11,11 @@
     "@madalin_kalteis & @chrissi_tbh",
     "@zimmer.berlin"
   ],
-  "result": null,
+  "result": {
+    "winnerIndex": 2,
+    "winner": "@seeblickvomdach",
+    "drawnAt": "2026-09-11T20:18:37.306Z"
+  },
   "createdAt": "2026-09-10T20:00:00.000Z",
-  "updatedAt": "2026-09-11T20:16:59.334Z"
+  "updatedAt": "2026-09-11T20:18:37.306Z"
 }
