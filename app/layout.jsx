@@ -19,7 +19,10 @@ export const metadata = {
   description: "Berlin Dance Open – Gewinnspiel-Ziehung",
   manifest: "/manifest.webmanifest",
   icons: {
-    icon: "/icons/icon-192.png",
+    icon: [
+      { url: "/favicon-light.png", media: "(prefers-color-scheme: light)", type: "image/png" },
+      { url: "/favicon-dark.png", media: "(prefers-color-scheme: dark)", type: "image/png" },
+    ],
     apple: "/icons/apple-touch-icon.png",
   },
 };
