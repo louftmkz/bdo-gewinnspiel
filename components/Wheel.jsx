@@ -96,7 +96,14 @@ export default function Wheel({ raffle }) {
 
   return (
     <div className="flex flex-col items-center gap-8 w-full">
-      <div className="relative" style={{ width: WHEEL_SIZE, height: WHEEL_SIZE }}>
+      <div
+        className="relative w-full"
+        style={{
+          width: `min(${WHEEL_SIZE}px, calc(100vw - 3rem))`,
+          aspectRatio: "1 / 1",
+          maxWidth: WHEEL_SIZE,
+        }}
+      >
         <div
           className="absolute left-1/2 -top-3 -translate-x-1/2 z-20"
           style={{
@@ -121,7 +128,6 @@ export default function Wheel({ raffle }) {
         >
           {participants.map((p, i) => {
             const mid = i * per + per / 2;
-            const textColorClass = i % 2 === 0 ? "text-paper" : "text-ink";
             return (
               <div
                 key={i}
@@ -129,12 +135,11 @@ export default function Wheel({ raffle }) {
                 style={{ transform: `rotate(${mid}deg)` }}
               >
                 <span
-                  className={`${textColorClass} font-body font-semibold text-center leading-tight px-1`}
+                  className="text-ink font-body font-semibold text-center leading-tight px-1"
                   style={{
                     marginTop: "12%",
                     width: "42%",
                     fontSize: labelFontSize(n),
-                    textShadow: i % 2 === 0 ? "0 1px 2px rgba(0,0,0,0.35)" : "none",
                   }}
                 >
                   {p}
